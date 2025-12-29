@@ -1,27 +1,73 @@
+:root {
+  --primary: #0a66c2;
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #1f2937;
+  --border: #d1d5db;
+}
+
+* { box-sizing: border-box; }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f3f6f9;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
+/* Header */
+.header {
+  background: var(--primary);
+  padding: 15px 0;
+  color: white;
+}
+.header .inner {
+  width: 420px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header img { height: 32px; }
+.header h1 { font-size: 20px; margin: 0; font-weight: 600; }
+
+/* Card */
 .card {
-  width: 360px;
-  margin: 80px auto;
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 6px;
+  background: var(--card);
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-input, button {
+/* Inputs & Buttons */
+input {
   width: 100%;
-  padding: 10px;
-  margin: 8px 0;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+}
+input:focus {
+  border-color: var(--primary);
+  outline: none;
 }
 
 button {
-  background: #005da6;
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
   color: white;
   border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  background: #0852a1;
 }
 
 .consent {
