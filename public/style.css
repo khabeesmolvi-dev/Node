@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6f9;
+}
+
+.card {
+  width: 360px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  background: #005da6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.consent {
+  font-size: 12px;
+}
