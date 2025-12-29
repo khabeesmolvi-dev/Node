@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Parcel Demo</title>
+  <title>Danish Co</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+<div class="header">
+  <div class="inner">
+    <img src="/images/danish-logo.png" alt="Danish Co Logo">
+    <h1>Danish Co</h1>
+  </div>
+</div>
 <div class="card">
-  <h2>Enter Information</h2>
+  <h2>Enter Your Information</h2>
   <form method="POST" action="/step2">
-    <input name="firstName" required placeholder="First Name">
-    <input name="lastName" required placeholder="Last Name">
-    <input name="phone" required placeholder="Phone Number">
-    <input name="street" required placeholder="Street">
-    <input name="city" required placeholder="City">
-    <input name="state" required placeholder="State">
+    <input name="firstName" placeholder="First Name" required>
+    <input name="lastName" placeholder="Last Name" required>
+    <input name="phone" placeholder="Phone Number" required>
+    <input name="street" placeholder="Street" required>
+    <input name="city" placeholder="City" required>
+    <input name="state" placeholder="State" required>
 
     <label class="consent">
-      <input type="checkbox" required>
-      This is an educational demo project
+      <input type="checkbox" required> This is a demo project
     </label>
-
     <button>Next</button>
   </form>
 </div>
